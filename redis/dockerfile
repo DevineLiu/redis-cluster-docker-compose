@@ -1,4 +1,5 @@
-FROM redis:6.2.6
+#FROM redis:6.2.6
+FROM eqalpha/keydb
 MAINTAINER Yowko Tsai <yowko@yowko.com>
 COPY rediscluster.conf /etc/redis/rediscluster.conf
 ENTRYPOINT redis-server /etc/redis/rediscluster.conf
